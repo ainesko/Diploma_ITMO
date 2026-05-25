@@ -10,7 +10,7 @@ def run_musical_denovo(
     output_dir: str | Path,
     sig_type: str = "SBS96",
     min_components: int = 1,
-    max_components: int = 4,
+    max_components: int = 6,
     n_replicates: int = 20,
     ncpu: int = 1,
 ):
@@ -127,7 +127,7 @@ if __name__ == "__main__":
         output_dir="results/musical/de_novo",
         sig_type="SBS96",
         min_components=1,
-        max_components=4,
+        max_components=6,
         n_replicates=20,
         ncpu=1,
     )
