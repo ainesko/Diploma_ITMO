@@ -5,8 +5,17 @@ K.Mardanova¹, M.Artomov²
 2. Institute for Genomic Medicine Nationwide Children’s Hospital
 ## Project description
 
-This study benchmarks mutational signature extraction methods on pediatric neuroblastoma data and evaluates adult-derived reference signatures.
+## Project description
 
+This project investigates somatic mutational signatures in pediatric neuroblastoma using de novo mutational signature extraction methods.
+
+The analysis compares MuSiCal and SigProfilerExtractor, evaluates mutational profile stability between pre- and post-treatment samples, and explores limitations of adult-derived COSMIC reference signatures in pediatric cancers with low mutational burden.
+
+## Installation of Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## MuSiCal installation
 
@@ -37,6 +46,34 @@ pip install SigProfilerExtractor
 from SigProfilerMatrixGenerator import install as gen_install
 gen_install.install('GRCh38') 
 ```
+
+
+## Workflow
+
+1. De novo signature extraction with MuSiCal  
+2. De novo signature extraction with SigProfilerExtractor  
+3. COSMIC-based signature interpretation  
+4. Comparison of extracted signatures  
+5. Visualization and downstream analysis  
+
+## Running the analysis
+
+```bash
+python code/run_analysis.py
+```
+
+## Input data
+
+The pipeline expects mutation count matrices as input.
+
+Supported mutation contexts:
+
+- SBS96
+- ID83
+
+For MuSiCal, input matrices should be provided in CSV format.
+
+For SigProfilerExtractor, input matrices should be provided in TSV format.
 
 
 ## References
