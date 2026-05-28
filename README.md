@@ -75,6 +75,8 @@ For MuSiCal, input matrices should be provided in CSV format.
 
 For SigProfilerExtractor, input matrices should be provided in TSV format.
 
+Example format of an SBS96 mutation count matrix used as input for mutational signature extraction.
+
 <img width="468" height="269" alt="image" src="https://github.com/user-attachments/assets/7941a6e4-4d2d-4021-a240-4e74d338c78c" />
 
 
