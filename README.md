@@ -75,23 +75,8 @@ For MuSiCal, input matrices should be provided in CSV format.
 
 For SigProfilerExtractor, input matrices should be provided in TSV format.
 
-```csv
-MutationType,Sample_1,Sample_2,...,Sample_N
-A[C>A]A,12,7,...,5
-A[C>T]A,3,1,...,2
-A[C>G]A,8,6,...,4
-...
-T[C>T]T,1,0,...,0
-```
+<img width="468" height="269" alt="image" src="https://github.com/user-attachments/assets/7941a6e4-4d2d-4021-a240-4e74d338c78c" />
 
-```csv
-MutationType,Sample_1,Sample_2,...,Sample_N
-1:Del:C,2,1,...,0
-1:Del:T,4,2,...,1
-1:Ins:C,1,0,...,1
-...
->=5:Ins:T,1,0,...,1
-```
 
 
 ## References
